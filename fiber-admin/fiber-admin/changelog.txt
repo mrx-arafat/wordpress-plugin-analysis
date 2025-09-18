@@ -1,0 +1,384 @@
+== Changelog ==
+
+= 3.2.7 =
+*Release Date - 15 September 2025*
+
+* Changed: Improve Admin Login UI
+
+= 3.2.6 =
+*Release Date - 11 July 2025*
+
+* Changed: Update WordPress version to 6.8.1.
+* Changed: Use default WordPress admin setting UI instead of creating custom admin style.
+* Changed: Create 2 new options: Enable Text Protection and Enable Image Protection.
+
+= 3.2.5 =
+*Release Date - 13 January 2025*
+
+* Fixed: Fix warning "gives error _load_textdomain_just_in_time was called incorrectly" with WordPress 6.7.1
+
+= 3.2.4 =
+*Release Date - 04 November 2024*
+
+* Changed: Add extra filter `fiad_email_converter` to use the feature plain email address converter.
+
+= 3.2.3 =
+*Release Date - 23 September 2024*
+
+* Changed: Update WordPress version to 6.6.2
+
+= 3.2.2 =
+*Release Date - 22 August 2024*
+
+* Fixed: Convert email conflicts with trailing slash in br tag.
+
+= 3.2.1 =
+*Release Date - 25 June 2024*
+
+* Fixed: Fix missing helper function fiad_get_file_upload_path.
+
+= 3.2.0 =
+*Release Date - 23 June 2024*
+
+* Fixed: Fix wrong HTML tag when mailto link exists.
+* Fixed: Exclude Simple Multisite Crossposting meta keys when duplicating posts.
+* Removed: Remove Coming soon / Maintenance mode.
+
+= 3.1.3 =
+*Release Date - 17 November 2023*
+
+* Fixed: Fix background image option is not working in While Label.
+* Fixed: Fix bug duplicate array type in meta fields.
+* Fixed: Fix bug prevent sanitize filename for unexpected file types.
+
+= 3.1.2 =
+*Release Date - 11 September 2023*
+
+* Fixed: Fix wrong CSM mode make draft preview blank page.
+* Fixed: Fix CSM meta boxes didn't work.
+* Fixed: Remove unused constant `PAGE_TYPE`.
+
+= 3.1.1 =
+*Release Date - 05 September 2023*
+
+* Fixed: Disable dev mode.
+* Changed: Update WordPress tested version.
+
+= 3.1.0 =
+*Release Date - 05 September 2023*
+
+* New feature: Coming Soon & Maintenance Mode.
+* Changed: Improve email regex pattern.
+* Fixed: Apply new code for database error to prevent the wrong URLs exist.
+
+= 3.0.0 =
+*Release Date - 28 June 2023*
+
+* Fixed: Fix wrong email regex pattern.
+* Added: Improve content protection scripts.
+* Added: Sanitizing filename to a server-friendly version.
+* Added: Improve feature auto set attachment title with sanitized filename.
+
+= 2.0.16 =
+*Release Date - 16 May 2023*
+
+* Fixed: Use admin bar default when the option enable admin toolbar is disabled.
+
+= 2.0.15 =
+*Release Date - 31 January 2023*
+
+* Fixed: Skip auto replace email address if the content has email in HTML attribute.
+* Added: Add option to toggle admin toolbar.
+
+= 2.0.14 =
+*Release Date - 16 December 2022*
+
+* Fixed: Fix error when other plugins include SVG library.
+* Fixed: Prevent to change the passed orderby in admin.
+* Fixed: Fix wrong param in `simplexml_load_file` function.
+
+= 2.0.13 =
+*Release Date - 26 September 2022*
+
+* Fixed: Check before re-order CPO.
+
+= 2.0.12 =
+*Release Date - 20 September 2022*
+
+* Fixed: Fix issue CPO creating new post.
+
+= 2.0.11 =
+*Release Date - 23 August 2022*
+
+* Changed: Remove autocomplete caption image.
+
+= 2.0.10 =
+*Release Date - 25 July 2022*
+
+* Fixed: Fix issue showing error in custom taxonomies when option Custom Taxonomy Order is not enabled.
+
+= 2.0.9 =
+*Release Date - 20 June 2022*
+
+* Fixed: Missing `stripslashes` when displaying DB Error message.
+* Fixed: Fix issue custom term order not working when creating new item.
+
+= 2.0.8 =
+*Release Date - 15 June 2022*
+
+* Fixed: Use `show_ui` to show CPT in CPO.
+
+= 2.0.7 =
+*Release Date - 20 May 2022*
+
+* Fixed: Fix setting white label link color not working.
+
+= 2.0.6 =
+*Release Date - 13 May 2022*
+
+* Fixed: Fix duplicate width height attribute for SVG images.
+
+= 2.0.5 =
+*Release Date - 27 April 2022*
+
+* Fixed: Fix conflicts with SVG Support plugin.
+
+= 2.0.4 =
+*Release Date - 26 April 2022*
+
+* Fixed: Fix bug with Override Default Query for Post Types doesn't work properly.
+
+= 2.0.3 =
+*Release Date - 23 April 2022*
+
+* Fixed: Round up image size for SVG to be valid with W3C rule.
+
+= 2.0.2 =
+*Release Date - 11 April 2022*
+
+* Changed: Update require PHP version to 7.0.
+
+= 2.0.1 =
+*Release Date - 22 March 2022*
+
+* Changed: Add tab setting title.
+
+= 2.0.0 =
+*Release Date - 20 March 2022*
+
+* New: Move Fiber Admin setting menu to Settings.
+* New: Upgrade setting UI to tabs.
+* Fixed: Fix wrong escape string in Database Error Message.
+
+= 1.7.0 =
+*Release Date - 07 March 2022*
+
+* Changed: Enable duplicate post as default.
+* Changed: Code improvement.
+
+= 1.6.0 =
+*Release Date - 05 February 2022*
+
+* Changed: WordPress 5.9 compatibility.
+* Added: Use favicon for admin bar logo.
+
+= 1.5.15 =
+*Release Date - 18 January 2022*
+
+* Fixed: Fix bug can't update favicon when enable SVG image.
+
+= 1.5.14=
+*Release Date - 17 January 2022*
+
+* Added: Santialize SVG automatically.
+
+= 1.5.13=
+*Release Date - 11 January 2022*
+
+* Fixed: PHP 8.0 compatibility.
+* Fixed: Add missing metadata for SVG images.
+
+= 1.5.12=
+*Release Date - 28 November 2021*
+
+* Fixed: PHP 8.0 compatibility.
+
+= 1.5.11=
+*Release Date - 24 November 2021*
+
+* Added: Remove meta generator for plugin WP Mail Logging.
+* Fixed: Wrong mime type for SVG images.
+
+= 1.5.10=
+*Release Date - 16 November 2021*
+
+* Changed: Make "Convert email text to link" be compatible with Divi theme.
+
+= 1.5.9=
+*Release Date - 11 November 2021*
+
+* Fixed: Fix error "This file type is not allowed for security reasons." when uploading SVG file.
+* Fixed: WordPress media preview is not working for SVG images.
+
+= 1.5.8=
+*Release Date - 09 November 2021*
+
+* Fixed: Database Error Page Settings is not working, can't create the file `db-error.php`.
+* Added: Remove `db-error.php` when deactivating plugin.
+* Added: Sanitize SVG images.
+
+= 1.5.7=
+*Release Date - 24 October 2021*
+
+* Added: Remove `WordPress` in login title.
+
+= 1.5.6=
+*Release Date - 19 October 2021*
+
+* Fixed: Missing Woocommerce custom taxonomies in CPO.
+* Fixed: Disable CPO drag and drop on mobile.
+
+= 1.5.5=
+*Release Date - 14 October 2021*
+
+* Fixed: Missing drag and drop style on CPO page enabled.
+
+= 1.5.4=
+*Release Date - 06 October 2021*
+
+* Fixed: Update enqueue scripts only in Fiber Admin pages.
+* Changed: Delivery the minified scripts.
+
+= 1.5.3 =
+*Release Date - 05 October 2021*
+
+* Changed: Delete `db-error.php` on uninstall or deactivate.
+* Added: Remove meta generator tags.
+
+= 1.5.2 =
+*Release Date - 03 October 2021*
+
+* Fixed: Only show DB Error Page error message only when Disable File Editor constant is defined.
+* Fixed: Fix the issue DB Error Page may not work with Hardening options in Sucuri.
+
+= 1.5.1 =
+*Release Date - 03 October 2021*
+
+* Fixed: Set `max-width` for DB error logo image.
+* Fixed: Fix bug when checking table column exists for CPO.
+* Changed: Add error message when option Disable File Editor is activated.
+
+= 1.5.0 =
+*Release Date - 02 October 2021*
+
+* New: Customized Database Error page.
+
+= 1.4.1 =
+*Release Date - 01 October 2021*
+
+* Fixed: Wrong setting link on plugin page.
+* Changed: Delete admin bar logo since it's conflict with white label feature.
+* New: Remove Welcome Dashboard Widget.
+
+= 1.4.0 =
+*Release Date - 30 September 2021*
+
+* New: Add Settings Link on Plugin list.
+* New: Add Setting to update custom Admin Bar Logo.
+* Fixed: Preview image doesn't work when admin input image URL directly.
+
+= 1.3.0 =
+*Release Date - 24 September 2021*
+
+* New: Disable WordPress Automatic Updates by default.
+* New: Option to limit the number of revisions.
+* New: Disable comments completely as default.
+* Fixed: Option Override Default Query for Post Type / Taxonomy is not working.
+
+= 1.2.1 =
+*Release Date - 23 September 2021*
+
+* Changed: Disable Image / Content protection for users has `edit_posts` capability.
+* Fixed: Check column exists in database before adding the new one.
+
+= 1.2.0 =
+*Release Date - 22 September 2021*
+
+* Fixed: Option Disable Right Click Image is not working.
+* Fixed: Issue with Custom Post Order feature in backend.
+* Changed: Rename option Disable Right Click Image with Disable Image Protection.
+* Changed: Improve script for image protection.
+* New: Add option to protect content by default.
+
+= 1.1.1 =
+*Release Date - 21 September 2021*
+
+* Fixed: Issue with custom taxonomy when enabling Custom Post Order.
+
+= 1.1 =
+*Release Date - 16 September 2021*
+
+* New: Duplicate post feature.
+
+= 1.0.9 =
+*Release Date - 07 September 2021*
+
+* Fixed: Drag and drop CPT order not working.
+* Fixed: Table break when drag and drop.
+
+= 1.0.8 =
+*Release Date - 04 September 2021*
+
+* New: Drag and drop taxonomy order.
+* Changed: Restructure and cleanup code.
+
+= 1.0.7 =
+*Release Date - 29 August 2021*
+
+* Fixed: Skip convert plain text to email address if content has input type email address.
+* New: Add option to allow using SVG images.
+* New: Drag and drop post order.
+
+= 1.0.6 =
+*Release Date - 24 August 2021*
+
+* Fixed: Some minor bugs, security issues.
+* Changed: Revise code for PHP warnings.
+
+= 1.0.5 =
+*Release Date - 20 August 2021*
+
+* Fixed: Some minor bugs, security issues.
+
+= 1.0.4 =
+*Release Date - 19 August 2021*
+
+* Fixed: Some minor bugs, security issues.
+* Changed: Update Stable Tag.
+
+= 1.0.3 =
+*Release Date - 18 August 2021*
+
+* Fixed: Some minor bugs, security issues.
+* Changed: Update source code by WordPress review.
+
+= 1.0.2 =
+*Release Date - 17 August 2021*
+
+* Fixed: Color picker not working.
+* Fixed: Link color setting not working.
+* Added: Extra CSS for login page.
+* Fixed: Update include directory.
+* Changed: Improve preview image upload.
+* Added: Background image for login page.
+* Added: Auto convert email text to a link.
+
+= 1.0.1 =
+*Release Date - 16 August 2021*
+
+* Fixed: default option with Hide WordPress branding option.
+
+= 1.0.0 =
+*Release Date - 15 August 2021*
+
+* The very first version.
