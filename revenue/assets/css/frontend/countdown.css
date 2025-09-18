@@ -1,0 +1,58 @@
+/* Campaign Countdown */
+.revx-d-none {
+	display: none !important;
+}
+
+.revx-campaign-countdown {
+	max-width: 448px;
+    height: 216px;
+	border-radius: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    background-color: #0A0D14;
+}
+
+.revx-campaign-countdown__header-heading {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #868C98;
+	margin-bottom: 24px;
+}
+.revx-campaign-countdown-timer__remaing-time {
+	height: 72px;
+	width: 80px;
+	border-radius: 12px;
+	background-color: #20232D;
+	padding: 16px 18.5px ;
+	color: white;
+	font-size: 32px;
+}
+
+.revx-campaign-countdown-timer__content {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: -0.011em;
+	text-align: left;
+	color: #868C98;
+	margin-top: 4px;
+}
+
+.revx-campaign-countdown__content {
+    display: flex;
+	gap: 10px;
+}
+
+.revx-campaign-countdown,
+.revx-campaign-countdown-timer,
+.revx-campaign-countdown-timer__remaing-time {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.revx-campaign-countdown,
+.revx-campaign-countdown-timer {
+    flex-direction: column;
+}
