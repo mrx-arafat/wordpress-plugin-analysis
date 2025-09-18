@@ -1,0 +1,460 @@
+/*
+	Drawer
+*/
+.revx-campaign-drawer {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999999;
+	height: fit-content;
+	width: fit-content;
+}
+
+
+.revx-campaign-drawer .revx-drawer-content.revx-close-btn {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.revx-campaign-drawer .revx-close-btn:hover {
+	background: #eee;
+}
+
+.revx-campaign-drawer .revx-drawer-content.open .revx-drawer-details {
+	visibility: visible;
+	opacity: 1;
+	width: auto;
+	transition: opacity 0.4s ease-out, visibility 0.1s 0.1s, width 0.1s 0.4s;
+}
+
+
+.revx-campaign-drawer.top-right.has-upsell {
+	right: 0px;
+}
+
+.revx-campaign-drawer.bottom-right.has-upsell {
+	right: 0px;
+}
+
+.revx-campaign-drawer.bottom-left.has-upsell {
+	left: 0px;
+}
+
+.revx-campaign-drawer .revx-drawer-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+.revx-campaign-drawer .revx-drawer-content.open {
+	width: 475px;
+	margin-right: 20px;
+}
+
+.revx-campaign-drawer .revx-drawer-content.revx-has-upsell {
+	height: 160px;
+}
+
+/* .revx-campaign-drawer .revx-progress-container {
+	padding-top: 15px;
+	padding-right: 15px;
+}
+ */
+
+.revx-campaign-drawer.bottom-left .revx-drawer-content {
+
+	padding-left: 20px;
+}
+
+.revx-campaign-drawer.top-left .revx-circular-progress-container {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.revx-campaign-drawer.top-right {
+	top: 20%;
+	right: -20px;
+}
+
+.revx-campaign-drawer.top-right .revx-drawer-content {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.revx-campaign-drawer.top-right .revx-circular-progress-container {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.revx-campaign-drawer.bottom-left {
+	bottom: 20px;
+	left: -20px;
+}
+
+.revx-campaign-drawer.bottom-left .revx-drawer-content {
+	flex-direction: row-reverse;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.revx-campaign-drawer.bottom-left .revx-circular-progress-container {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+
+.revx-campaign-drawer.bottom-right {
+	bottom: 20px;
+	right: -20px;
+}
+
+.revx-campaign-drawer.bottom-right .revx-drawer-content {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.revx-campaign-drawer.bottom-right .revx-circular-progress-container {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.revx-campaign-drawer.top-left .revx-gift-tooltip.revx-spending-goal-gift {
+	max-width: 250px;
+}
+
+
+
+
+.revx-campaign-drawer.has-upsell .revx-circular-progress-container {
+	height: 160px;
+	width: 116px;
+	min-width: 116px
+}
+
+.revx-campaign-drawer.has-upsell.revx-drawer-content.open {
+	width: 620px;
+}
+
+.revx-campaign-drawer.has-upsell.revx-drawer-content {
+	width: 116px;
+}
+
+.revx-campaign-drawer.has-upsell .revx-circular-progress {
+	width: 92px;
+	height: 92px;
+}
+
+.revx-campaign-drawer.has-upsell .revx-circular-progress-container {
+	min-width: 116px;
+}
+
+
+.revx-campaign-drawer .revx-spending-goal-slider {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 0 40px;
+	/* padding-top: 26px; */
+	max-width: 472px;
+	margin: 0 auto;
+}
+
+
+.revx-campaign-drawer.top-left.has-upsell {
+	left: 0px;
+}
+
+.revx-campaign-drawer.top-right.has-upsell {
+	right: 0px;
+}
+
+.revx-campaign-drawer.bottom-right.has-upsell {
+	right: 0px;
+}
+
+.revx-campaign-drawer.bottom-left.has-upsell {
+	left: 0px;
+}
+
+.revx-campaign-drawer .revx-drawer-content {
+	background: white;
+	transition: width 0.3s ease-in-out;
+	display: flex;
+	height: 100px;
+	width: 100px
+}
+
+
+.revx-campaign-drawer .revx-circular-progress {
+	width: 56px;
+	height: 56px;
+	position: relative;
+	cursor: pointer;
+}
+
+.revx-campaign-drawer .revx-circular-progress svg {
+	transform: rotate(-90deg);
+}
+
+.revx-campaign-drawer .revx-drawer-details {
+	/* padding-left: 20px;
+																				padding-right: 20px; */
+	flex-grow: 1;
+	visibility: hidden;
+	opacity: 0;
+	width: 0;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+	/* overflow: hidden; */
+}
+
+.revx-campaign-drawer .revx-upsell-slider {
+	width: 460px;
+}
+.revx-campaign-drawer .revx-circular-text {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.revx-campaign-drawer.has-upsell .revx-circular-text {
+	font-size: 14px;
+}
+
+
+.revx-campaign-drawer .revx-progress-bar {
+	background: var(--revx-empty-color);
+	height: 8px;
+	border-radius: 4px;
+	position: relative;
+}
+
+.revx-campaign-drawer .revx-builder-btn {
+	white-space: nowrap;
+}
+
+.revx-campaign-drawer .revx-circular-progress-container {
+	min-width: 80px;
+}
+
+/* Positioning logic for 4 positions */
+.revx-campaign-drawer.top-left {
+	top: 20%;
+	left: -20px;
+	/* padding-left: 20px; */
+}
+
+.revx-campaign-drawer.top-left .revx-drawer-content {
+	flex-direction: row-reverse;
+}
+
+/* .revx-campaign-drawer.top-left .revx-drawer-details {
+	padding-right: 12px;
+	padding-left: 12px;
+} */
+.revx-campaign-drawer.top-left .revx-drawer-details {
+	/* padding-right: 20px; */
+		padding-right: 12px;
+		padding-left: 12px;
+	}
+
+	.revx-campaign-drawer.has-upsell.top-left .revx-drawer-details {
+		padding-left: 0px;
+	}
+
+	.revx-campaign-drawer.bottom-left .revx-drawer-details {
+		/* padding-right: 20px; */
+		padding-right: 12px;
+		padding-left: 12px;
+	}
+
+	.revx-campaign-drawer.has-upsell.bottom-left .revx-drawer-details {
+		padding-left: 0px;
+}
+
+.revx-campaign-drawer.top-right .revx-drawer-details {
+	padding-right: 12px;
+		padding-left: 12px;
+	}
+
+	.revx-campaign-drawer.has-upsell.top-right .revx-drawer-details {
+		padding-right: 0px;
+	}
+
+	.revx-campaign-drawer.bottom-right .revx-drawer-details {
+		padding-right: 12px;
+		padding-left: 12px;
+	}
+
+	.revx-campaign-drawer.has-upsell.bottom-right .revx-drawer-details {
+		padding-right: 0px;
+}
+
+.revx-campaign-drawer.top-left .revx-drawer-content {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding-left: 20px;
+}
+
+.revx-campaign-drawer.bottom-left .revx-drawer-content {
+	padding-left: 20px;
+}
+
+.revx-campaign-drawer.top-left .revx-circular-progress-container {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.revx-campaign-drawer .revx-circular-progress-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.revx-campaign-drawer.top-right {
+	top: 20%;
+	right: -20px;
+}
+
+.revx-campaign-drawer.top-right .revx-drawer-content {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.revx-campaign-drawer.top-right .revx-circular-progress-container {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.revx-campaign-drawer.bottom-left {
+	bottom: 20px;
+	left: -20px;
+}
+
+.revx-campaign-drawer.bottom-left .revx-drawer-content {
+	flex-direction: row-reverse;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.revx-campaign-drawer.bottom-left .revx-circular-progress-container {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+
+
+
+.revx-campaign-drawer.bottom-right {
+	bottom: 20px;
+	right: -20px;
+}
+
+.revx-campaign-drawer.bottom-right .revx-drawer-content {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.revx-campaign-drawer.bottom-right .revx-circular-progress-container {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.revx-campaign-drawer .revx-progress-container.revx-btn-size-S {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 0px;
+}
+
+.revx-campaign-drawer .revx-progress-container.revx-btn-size-M {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 0px;
+
+}
+
+.revx-campaign-drawer .revx-progress-container.revx-btn-size-L {
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-right: 0px;
+
+}
+
+.revx-campaign-drawer .revx-spending-goal-nav-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: content-box;
+}
+
+.revx-campaign-drawer .revx-spending-goal-reward-message-wrapper.has-message {
+	display: flex;
+	gap: 0px
+}
+
+.revx-campaign-drawer .revx-has-upsell.revx-drawer-content.open {
+	width: 620px;
+}
+
+.revx-campaign-drawer .revx-progress-empty {
+	stroke: var(--revx-empty-color, #f5f5f5);
+	stroke-width: 8px;
+}
+
+.revx-campaign-drawer .revx-progress-active {
+	stroke: var(--revx-filled-color, #6E3FF3);
+	transition: stroke-dashoffset 0.5s ease-in-out;
+	stroke-width: 8px;
+}
+
+.revx-campaign-drawer .revx-close-btn {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.2s ease, visibility 0.2s ease;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	top: -16px;
+	right: 0;
+}
+
+.revx-campaign-drawer .revx-circular-progress-icon {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.revx-campaign-drawer .revx-circular-progress-icon svg {
+	transform: rotate(0deg);
+}
+
+.revx-campaign-fsb:first-of-type {
+	display: block;
+}
+
+.revx-campaign-fsb .revx-drawer-content.open .revx-progress-container {
+	opacity: 1;
+}
+
+.revx-campaign-fsb .revx-drawer-content .revx-progress-container {
+	opacity: 0;
+	transition: opacity 0.1s ease-out;
+}
