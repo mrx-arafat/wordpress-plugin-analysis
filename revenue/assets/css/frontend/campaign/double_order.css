@@ -1,0 +1,160 @@
+.revx-double-order-checkbox {
+	margin: 0;
+}
+
+.revx-double-order-container .revx-products-lists {
+	border-style: dashed !important;
+	margin-bottom: 12px;
+}
+
+.revx-double-order-container .revx-products-lists-specific {
+	border-style: dashed !important;
+	margin-bottom: 12px;
+}
+
+.revx-double-order-container .revx-countdown-timer-prefix {
+	margin-right: 4px;
+}
+
+.revx-double-order-checkbox-label .revx-double-order-checkbox {
+	cursor: pointer;
+}
+
+.revx-double-order-checkbox-label .revx-products-list-header {
+	cursor: pointer;
+	flex: 1;
+}
+
+/* Shake Animation */
+.revx-double-order-animation-shake {
+	/* Default delay */
+	animation: revx-double-order-animation-shake var(--revx-double-order-animation-duration, 1s) ease-in-out infinite;
+}
+
+@keyframes revx-double-order-animation-shake {
+
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	25% {
+		transform: translateX(-10px);
+	}
+
+	75% {
+		transform: translateX(10px);
+	}
+}
+
+/* Tada Animation */
+.revx-double-order-animation-tada {
+	/* Default delay */
+	animation: revx-double-order-animation-tada var(--revx-double-order-animation-duration, 1.5s) ease-in-out infinite;
+}
+
+@keyframes revx-double-order-animation-tada {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+				15%,
+				25% {
+					transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -2deg);
+	}
+
+				35%,
+				55%,
+				75%,
+				95% {
+					transform: scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, 2deg);
+	}
+
+				45%,
+				65%,
+				85% {
+					transform: scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, -2deg);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+
+/* Pulse Animation */
+.revx-double-order-animation-pulse {
+	/* Default delay */
+	animation: revx-double-order-animation-pulse var(--revx-double-order-animation-duration, 1s) ease-in-out infinite;
+}
+
+@keyframes revx-double-order-animation-pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.03);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Swing Animation */
+.revx-double-order-animation-swing {
+	/* Default delay */
+	animation: revx-double-order-animation-swing var(--revx-double-order-animation-duration, 1.5s) ease-in-out infinite;
+
+	transform-origin: top center;
+}
+
+@keyframes revx-double-order-animation-swing {
+	0% {
+		transform: rotate(0);
+	}
+
+	25% {
+		transform: rotate(5deg);
+	}
+
+	75% {
+		transform: rotate(-5deg);
+	}
+
+	100% {
+		transform: rotate(0);
+	}
+}
+
+/* Bounce Animation */
+.revx-double-order-animation-bounce {
+	/* Default delay */
+	animation: revx-double-order-animation-bounce var(--revx-double-order-animation-duration, 1s) ease-in-out infinite;
+}
+
+@keyframes revx-double-order-animation-bounce {
+
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-20px);
+	}
+}
+
+.revx-double-order-animation:hover {
+	--revx-double-order-animation-duration: 0s;
+}
+
+
+.revx-double-order-container .revx-double-order-countdown-timer-container {
+	border: none !important;
+}
+
+.revx-double-order-container {
+	margin-bottom: 16px !important;
+}
