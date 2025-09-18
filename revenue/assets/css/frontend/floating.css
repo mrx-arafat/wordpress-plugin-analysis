@@ -1,0 +1,180 @@
+.revx-floating-main {
+    /* width: 100%;
+    max-width: 558px;
+    animation-duration: 1.5s;
+    position: fixed;
+    z-index: 999; */
+}
+
+.revx-floating-main .revx-floating {
+    box-shadow: 0px 16px 40px -8px rgba(88, 92, 95, 0.16);
+}
+
+.revx-floating {
+    /* display: grid; */
+    /* max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden; */
+    /* width: -webkit-fill-available; */
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+
+    width: 100%;
+    max-width: 558px;
+    animation-duration: 1.5s;
+    position: fixed;
+    z-index: 999;
+}
+
+.revx-floating-main {
+    display: none;
+}
+.revx-floating-main.floating-visible{
+    display: block;
+}
+
+.revx-floating.revx-mix-match-grid {
+    max-width: 720px;
+}
+.revx-floating .revx-campaign-close-sticky {
+    position: static !important;
+}
+
+
+
+.revx-floating::-webkit-scrollbar,
+.revx-floating.revx-mix-match-grid .revx-campaign-container__wrapper::-webkit-scrollbar,
+.revx-floating.revx-campaign-list .revx-campaign-container__wrapper::-webkit-scrollbar {
+    height: 12px; /* for horizontal scrollbars */
+    width: 12px;
+}
+.revx-floating::-webkit-scrollbar-track,
+.revx-floating.revx-mix-match-grid .revx-campaign-container__wrapper::-webkit-scrollbar-track,
+.revx-floating.revx-campaign-list .revx-campaign-container__wrapper::-webkit-scrollbar-track {
+    background: #E2E4E9;
+    border-radius: 6px;
+}
+.revx-floating::-webkit-scrollbar-thumb,
+.revx-floating.revx-mix-match-grid .revx-campaign-container__wrapper::-webkit-scrollbar-thumb,
+.revx-floating.revx-campaign-list .revx-campaign-container__wrapper::-webkit-scrollbar-thumb {
+    background: #868C98;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    height: 6px;
+    cursor: grab;
+}
+
+/* Handle on hover */
+.revx-floating::-webkit-scrollbar-thumb:hover,
+.revx-floating.revx-mix-match-grid .revx-campaign-container__wrapper::-webkit-scrollbar-thumb:hover ,
+.revx-floating.revx-campaign-list .revx-campaign-container__wrapper::-webkit-scrollbar-thumb:hover {
+    border-radius: 6px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    height: 6px;
+}
+
+.revx-floating-container {
+    position: relative;
+    z-index: 999;
+	max-width: 500px;
+}
+
+.revx-floating-container::-webkit-scrollbar {
+    height: 14px; /* for horizontal scrollbars */
+    width: 8px;
+}
+.revx-floating-container::-webkit-scrollbar-track {
+    background: #E2E4E9;
+    border-radius: 6px;
+}
+/* Handle (thumb) */
+.revx-floating-container::-webkit-scrollbar-thumb {
+    background: #868C98;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    height: 6px;
+    cursor: grab;
+}
+
+.revx-floating-container .revx-selected-product-container  {
+    max-width: 100% !important;
+}
+
+.revx-floating-top-right .revx-floating {
+    animation-name: FloatTopRight;
+    animation-fill-mode: both;
+    top: 0px;
+    right: 0px;
+}
+.revx-floating-top-left .revx-floating {
+    animation-name: FloatTopLeft;
+    animation-fill-mode: both;
+    top: 0px;
+    left: 0px;
+}
+
+
+.revx-floating-bottom-right .revx-floating {
+    animation-name: FloatBottomRight;
+    animation-fill-mode: both;
+    bottom: 0px;
+    right: 0px;
+}
+.revx-floating-bottom-left .revx-floating {
+    animation-name: FloatBottomLeft;
+    animation-fill-mode: both;
+    bottom: 0px;
+    left: 0px;
+    top: auto;
+}
+
+
+.revx-floating-container .revx-bundle-discount .revx-campaign-container__wrapper {
+	/* overflow: hidden; */
+}
+
+@keyframes FloatBottomRight {
+    from {
+        transform: scale(.8) translate(20%, 20%);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translate(-10px, -10px);
+    }
+}
+@keyframes FloatBottomLeft {
+    from {
+        opacity: 0;
+        transform: scale(.8) translate(-20%, 20%);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translate(-10px, -10px);
+    }
+}
+
+@keyframes FloatTopLeft {
+    from {
+        opacity: 0;
+        transform: scale(.8) translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translate(10px, 10px);
+    }
+}
+@keyframes FloatTopRight {
+    from {
+        opacity: 0;
+        transform: scale(.8) translate(50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translate(-10px, 10px);
+    }
+}
