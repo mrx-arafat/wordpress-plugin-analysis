@@ -1,0 +1,702 @@
+/*================================
+    Common Value
+==================================*/
+.revx-flex {
+    display: flex;
+}
+.revx-width-full {
+    width: 100%;
+}
+.revx-cursor-pointer {
+    cursor: pointer;
+}
+.revx-d-none {
+    display: none !important;
+}
+.revx-align-center {
+	display: flex;
+	align-items: center;
+}
+.revx-all-center {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+.revx-justify-space, .revx-justify-space-sm {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.revx-justify-space-sm {
+    gap: 16px;
+}
+
+.revx-full-width {
+	width: 100%;
+}
+
+.revx-justify-center {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.revx-product-title {
+    width: fit-content;
+}
+.revx-product-title,
+.revx-product-title {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.revx-buyx-gety .revx-campaign-item .revx-product-title {
+    max-width: 75%;
+}
+
+.revx-campaign-item__image img {
+    border-radius: inherit;
+    aspect-ratio: 1/1;
+    box-shadow: none !important;
+    height: auto;
+}
+
+.revx-campaign-item__prices {
+    /* flex-shrink: 0; */
+    flex-wrap: wrap;
+    align-items: center;
+}
+.revx-campaign-grid .revx-campaign-item__prices {
+    align-items: flex-start;
+}
+
+.revx-sticky-offer {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+
+}
+.revx-builder-sticky-offer {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.revx-builder-sticky-offer__content{
+    text-align: center;
+    position: relative;
+    z-index: 9999;
+    margin: 0px !important;
+    white-space: nowrap;
+}
+
+input[data-name="revx_quantity"]::-webkit-outer-spin-button,
+input[data-name="revx_quantity"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[data-name="revx_quantity"] {
+-moz-appearance: textfield;
+}
+input[data-name="revx_quantity"] {
+    -ms-appearance: textfield;
+}
+
+.revx-campaign-item__regular-price,
+.revx-campaign-item__sale-price  {
+    line-height: 1.4 !important;
+}
+
+.revx-space-nowrap {
+    white-space: nowrap;
+}
+
+/*================================
+    Toaster Style
+==================================*/
+.revx-toaster {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    gap: 16px;
+}
+.revx-toaster.revx-toaster-inline {
+    margin-top: 16px;
+}
+.revx-toaster-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column-reverse;
+    width: fit-content;
+    position: fixed;
+    top: 100px;
+    right: 24px;
+    z-index: 9999;
+    transition: 0.3s;
+}
+.revx-toaster-lg {
+    height: 40px;
+    padding: 0px 12px;
+}
+.revx-toaster-sm {
+    height: 32px;
+    padding: 0px 8px;
+}
+.revx-toaster__icon, .revx-toaster__icon path {
+    stroke: #fff;
+}
+.revx-toaster__close-icon {
+    cursor: pointer;
+}
+.revx-toaster__upload-icon {
+    margin: 0px 10px 0px 5px;
+}
+.revx-toaster-position__top-left {
+    animation: toasterHeightAnimation 0.3s ease, toasterSlideEntire 0.5s ease-in 0.3s, toasterHideAnimation 1s ease 4s;
+}
+.revx-toaster__danger {
+    background-color: #df1c41;
+}
+.revx-toaster__danger-light {
+    color: #710e21;
+    background-color: #f8c9d2;
+}
+.revx-toaster__danger-light .revx-toaster__icon, .revx-toaster__danger-light .revx-toaster__icon path {
+    stroke: #710e21;
+}
+.revx-toaster__warning {
+    background-color: #f17b2c;
+}
+.revx-toaster__warning-light {
+    color: #6e330c;
+    background-color: #ffdac2;
+}
+.revx-toaster__warning-light .revx-toaster__icon, .revx-toaster__warning-light .revx-toaster__icon path {
+    stroke: #6e330c;
+}
+.revx-toaster__success {
+    background-color: #00a464;
+}
+.revx-toaster__success-light {
+    color: #003021;
+    background-color: #a0facb;
+}
+.revx-toaster__success-light .revx-toaster__icon, .revx-toaster__success-light .revx-toaster__icon path {
+    stroke: #003021;
+}
+.revx-toaster__info {
+    background-color: #375dfb;
+}
+.revx-toaster__info-light {
+    color: #1b248d;
+    background-color: #dae3ff;
+}
+.revx-toaster__info-light .revx-toaster__icon, .revx-toaster__info-light .revx-toaster__icon path {
+    stroke: #1b248d;
+}
+.revx-toaster__dark {
+    background-color: #20232d;
+}
+.revx-toaster__dark-light {
+    color: #20232d;
+    background-color: #e2e4e9;
+}
+.revx-toaster__dark-light .revx-toaster__icon, .revx-toaster__dark-light .revx-toaster__icon path {
+    stroke: #20232d;
+}
+@keyframes toasterSlideEntire {
+    from {
+        transform: translateX(100%);
+   }
+    to {
+        transform: translateX(calc(0% + 24px));
+   }
+}
+@keyframes toasterHeightAnimation {
+    from {
+        transform: translateX(120%);
+        height: 0px;
+        overflow: hidden;
+   }
+    to {
+        transform: translateX(120%);
+        height: 40px;
+        overflow: visible;
+   }
+}
+@keyframes toasterHideAnimation {
+    from {
+        opacity: 1;
+   }
+    to {
+        opacity: 0;
+   }
+}
+
+/* Toast */
+
+/* .toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+*/
+.toast {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    display: none;
+    animation: slideIn 0.5s ease-in-out;
+    pointer-events: auto;
+    position: relative;
+}
+
+.toast-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.revx-toaster-container {
+	position: fixed;
+	top: 40px;
+	right: 20px;
+	z-index: 9999;
+}
+
+.revx-toaster {
+	margin-bottom: 10px;
+	padding: 12px 16px;
+	border-radius: 4px;
+	min-width: 250px;
+	display: none;
+}
+
+.revx-toaster__success {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.revx-toaster__error {
+	background-color: #f44336;
+	color: white;
+}
+
+.revx-toaster__close-icon {
+	cursor: pointer;
+}
+/*================================
+    Toaster Style
+==================================*/
+/*================================
+    Add to cart / Mo Thanks Button start
+==================================*/
+.revx-builder-atc-btn,
+.revx-builder-noThanks-btn {
+    width: -webkit-fill-available; /* Safari and WebKit-based browsers */
+    width: -moz-available;         /* Firefox */
+    width: fill-available;         /* Standard, but limited browser support
+    /* width: 100%; conflict with mix match add to cart button  */
+	text-align: center;
+}
+
+.revx-builder-add-btn.revx-btn-size-L,
+.revx-builder-atc-btn.revx-btn-size-L,
+.revx-builder-noThanks-btn.revx-btn-size-L {
+    padding: 12px 16px;
+}
+
+.revx-builder-add-btn.revx-btn-size-M,
+.revx-builder-atc-btn.revx-btn-size-M,
+.revx-builder-noThanks-btn.revx-btn-size-M {
+    padding: 10px 16px;
+}
+
+.revx-builder-add-btn.revx-btn-size-S,
+.revx-builder-atc-btn.revx-btn-size-S,
+.revx-builder-noThanks-btn.revx-btn-size-S {
+    padding: 6px 12px;
+}
+
+.revx-builder-add-btn {
+    width: fit-content;
+    white-space: nowrap;
+}
+
+
+/*================================
+    Add to cart / Mo Thanks Button start
+==================================*/
+
+/*================================
+    Quantity button style start
+==================================*/
+.revx-builder__quantity {
+    border-style: solid;
+    height: max-content;
+    overflow: hidden;
+    min-height: 30px;
+    align-items: stretch !important;
+}
+
+.revx-quantity-minus,
+.revx-quantity-plus {
+    width: 100%;
+    cursor: pointer;
+    flex-shrink: 0;
+    border-color: inherit;
+    border-style: solid;
+    border-width: inherit;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.revx-quantity-minus {
+    border-left: 0px;
+}
+.revx-quantity-plus {
+    border-right: 0px;
+}
+
+.revx-builder__quantity input {
+    display: block;
+    height: auto;
+    width: 100%;
+    min-height: 100%;
+    padding: 0px !important;
+    border: 0px !important;
+    text-align: center;
+    border-radius: 0px;
+    outline: 0px !important;
+    background-color: #ffffff;
+}
+
+.revx-btn-size-L .revx-quantity-minus,
+.revx-btn-size-L .revx-quantity-plus {
+    height: 48px;
+    max-width: 48px;
+}
+
+.revx-btn-size-M .revx-quantity-minus,
+.revx-btn-size-M .revx-quantity-plus {
+    /* flex-shrink: 0; */
+    min-height: 40px;
+    max-width: 40px;
+}
+
+.revx-btn-size-S .revx-quantity-minus,
+.revx-btn-size-S .revx-quantity-plus {
+    min-height: 33px;
+    max-width: 33px;
+}
+
+.revx-builder__quantity.revx-btn-size-S {
+    max-width: 100px;
+}
+
+.revx-builder__quantity.revx-btn-size-M {
+    max-width: 119px;
+}
+
+.revx-builder__quantity.revx-btn-size-L {
+    max-width: 150px;
+}
+
+.revx-builder__quantity input::-webkit-outer-spin-button,
+.revx-builder__quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/*================================
+    Quantity button style end
+==================================*/
+
+/*================================
+    Builder Shape
+==================================*/
+.revx-builder-sticky-tag {
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    z-index: 1;
+}
+.revx-builder-sticky-tag__shape {
+    height: 40px;
+    width: 24px;
+    clipPath: polygon(0 0, 100% 0%, 100% 100%, 51% 72%, 0 100%);
+}
+
+.revx-builder__popular-tag {
+    position: absolute;
+    line-height: 1.3 !important;
+    z-index: 99;
+}
+.theme-blocksy .revx-builder__popular-tag {
+    line-height: inherit !important;
+}
+
+/* == Total Price Container == */
+.revx-total-price {
+    display: flex;
+    align-items: center;
+}
+
+.revx-total-price-title {
+    margin: 0px !important;
+    flex-shrink: 0;
+}
+
+.revx-total-price .revx-total-price__offer-price {
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    row-gap: 8px;
+}
+.revx-total-price .revx-campaign-item__prices {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: 4px !important;
+}
+
+/*================================
+    Total Price Container
+==================================*/
+/* Campaign Close Button Style Start */
+.revx-popup__content  .revx-campaign-close-sticky  {
+}
+.revx-campaign-close-sticky {
+
+}
+.revx-floating .revx-campaign-close-sticky {
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    z-index: 999;
+}
+.revx-campaign-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    z-index: 999999999999999;
+}
+/* Campaign Close Button Style End */
+
+.revx-builder-savings-tag {
+    display: inline-block;
+    width: fit-content;
+    white-space: nowrap;
+    line-height: 1.3 !important;
+}
+
+/* Add Bundle Start */
+.revx-product-bundle {
+    position: relative;
+    z-index: 99;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.revx-product-bundle svg {
+    height: 16px;
+    width: 16px;
+}
+
+.revx-product-bundle svg, .revx-product-bundle path {
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+
+/*================================
+    Slider
+==================================*/
+.revx-slider {
+    /* position: relative; */
+    width: 100%;
+    /* max-width: 600px; */
+    overflow: hidden;
+}
+.revx-slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.revx-builderSlider-left,
+.revx-builderSlider-right {
+    position: absolute;
+    z-index: 99;
+    align-self: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.revx-campaign-container:hover .revx-builderSlider-left,
+.revx-campaign-container:hover .revx-builderSlider-right {
+    visibility: visible;
+    opacity: 1;
+}
+
+.revx-builderSlider-right {
+    left: auto;
+    right: 0;
+}
+.revx-builderSlider-left {
+    left: 0;
+}
+
+.revx-show-icon, .revx-has-overflow {
+	display: flex !important;
+	cursor: pointer;
+}
+
+/* Theme Compatibility - After and Before Product Inpage Container*/
+/*
+	Storefront 				-> Passed
+	Woodmart  				-> Passed
+	Blocksy					-> Passed
+	Kadence					-> Passed
+	Twenty Twenty Two		-> Passed
+	Twenty Twenty Three 	-> Passed
+	Twenty Twenty Four	 	-> Passed
+	Astra					-> Passed
+
+*/
+
+.theme-twentytwentythree .revx-container{
+	max-width: calc(1000px + var(--wp--style--root--padding-right) + var(--wp--style--root--padding-left)) !important;
+	/* padding-right: var(--wp--style--root--padding-right) !important;
+    padding-left: var(--wp--style--root--padding-left) !important; */
+}
+
+.theme-twentytwentyfour .revx-container.after_single_product_summary {
+	padding: 0 !important;
+}
+
+.revx-container {
+    width: 100%;
+	max-width:var(--theme-boxed-content-max-width, var(--wp--style--global--wide-size,max(1200px,100%)))  !important;
+	margin: 0 auto !important;
+	/* padding-right: var(--wp--style--root--padding-right);
+    padding-left: var(--wp--style--root--padding-left); */
+}
+/* .before_cart_table.revx-container,
+.after_cart_table.revx-container,
+.before_checkout_billing_form.revx-container,
+.after_checkout_billing_form.revx-container {
+    max-width: 826px  !important;
+    width: 57vw;
+} */
+/* .before_cart_totals.revx-container,
+.after_cart_totals.revx-container,
+.proceed_to_checkout.revx-container {
+    max-width: 570px  !important;
+} */
+/* .checkout_before_order_review.revx-container,
+.review_order_before_order_total.revx-container,
+.review_order_after_order_total.revx-container,
+.review_order_before_payment.revx-container,
+.review_order_after_payment.revx-container,
+.checkout_after_order_review.revx-container {
+    max-width: 630px  !important;
+    width: 35vw;
+} */
+/* .revx-container.before_single_product_summary {
+    width: 50%;
+} */
+/* .revx-container.before_single_product_summary:has(.revx-frequently-bought-together-grid) {
+    width: 50%;
+} */
+.before_single_product_summary .revx-bxgy-trigger-items .revx-builder-sticky-offer, .before_single_product_summary .revx-bxgy-offer-items .revx-builder-sticky-offer {
+    position: static;
+    white-space: nowrap;
+}
+.before_single_product_summary .revx-bxgy-trigger-items .revx-campaign-item__prices, .before_single_product_summary .revx-bxgy-offer-items .revx-campaign-item__prices {
+    flex-wrap: wrap;
+}
+
+.revx-container .revx-inpage-container {
+	/* margin-inline: auto !important; */
+	max-width: var(--theme-container-width);
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.revx-admin-edit {
+    position: absolute;
+    z-index: 99;
+    right: 10px;
+    top: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    background: #eafff4;
+    color: #00a464;
+    padding: 0px 6px;
+    border-radius: 4px;
+    border: 1px solid #a0facb;
+}
+.revx-popup .revx-admin-edit,
+.revx-floating .revx-admin-edit {
+    left: auto;
+    right: 42%;
+}
+.revx-admin-edit:hover {
+    background: #00a464;
+    color: #ffffff;
+    border-color: #00a464;
+}
+/*----------------------------------------------------------------------------------------------*/
+.revx-container a.added_to_cart.wc-forward {
+	display: none;
+}
+
+.revx-volume-discount-list .revx-campaign-container__wrapper {
+	display: block !important;
+}
+
+/*
+Button Size
+*/
+
+.revx-builder-btn.revx-btn-size-L {
+	padding: 12px 16px;
+}
+
+.revx-builder-btn.revx-btn-size-M {
+	padding: 10px 16px;
+}
+
+.revx-builder-btn.revx-btn-size-S {
+	padding: 6px 12px;
+}
+
+.revx-builder-btn:hover {
+	background-color: var(--revx-hover-color) !important;
+	color: var(--revx-hover-text-color) !important;
+}
+
+/* theme compatibility */
+
+.wp-theme-thegem-elementor #site-header .header-main {
+    position: unset;
+}
+
+.revx-mix-match .revx-campaign-item__regular-price {
+    display: none;
+}
