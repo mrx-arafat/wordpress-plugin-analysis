@@ -1,0 +1,316 @@
+body.toplevel_page_revenue {
+	display: none;
+}
+body.toplevel_page_revenue.revx-loaded {
+	display: block;
+}
+
+.revx-wc-install__btn::before,
+.button.activating-message:before,
+.button.installing:before,
+.button.updating-message:before,
+.import-php .updating-message:before,
+.update-message p:before,
+.updating-message p:before {
+	color: #ffffff;
+}
+
+.revx-wc-install {
+	display: flex;
+	align-items: center;
+	background: #fff;
+	width: calc(100% - 30px);
+	border-left: 24px solid #f17b2c;
+	margin: auto;
+	background-color: #fef3eb;
+	height: 112px;
+	display: flex;
+	align-items: center;
+}
+
+.revx-wc-install__img {
+	max-width: 80px;
+	margin-left: 72px;
+	margin-right: 24px;
+}
+
+.revx-wc-install__content {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.revx-wc-install__body {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.revx-wc-install__message {
+	font-family: Inter;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: -0.006em;
+	text-align: left;
+	color: #525866;
+}
+
+.revx-wc-install__heading {
+	font-family: Inter;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 32px;
+	letter-spacing: -0.015em;
+	text-align: left;
+	color: #0a0d14;
+}
+
+.revx-wc-install__btn {
+	height: 52px;
+	border-radius: 12px;
+	background: #f17b2c;
+	cursor: pointer;
+	box-sizing: border-box;
+	font-size: 16px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+.revx-wc-install__btn:hover {
+	background: #c2540a;
+}
+
+.revx-wc-install__spinner {
+	display: none;
+	animation: dashicons-spin 1s infinite linear;
+}
+
+.revx-wc-install--loading .revx-wc-install__spinner {
+	display: inline-block;
+	margin-top: 12px;
+	margin-right: 5px;
+}
+
+@keyframes dashicons-spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.revx-wc-install__notice {
+	color: white;
+	background-color: #6c6cff;
+	position: relative;
+	font-size: 16px;
+	padding-left: 10px;
+	line-height: 23px;
+}
+
+.revx-wc-install__notice-wrapper {
+	margin-bottom: 0 !important;
+	padding: 10px 5px;
+}
+
+.revx-wc-install__btn--pro {
+	margin-left: 5px;
+	background-color: #3c3cb7 !important;
+	border-radius: 4px;
+	max-height: 30px !important;
+	padding: 8px 12px !important;
+	font-size: 14px;
+	position: relative;
+	top: -4px;
+}
+
+.revx-wc-install__btn--pro:hover {
+	background-color: #29298c !important;
+}
+
+.revx-wc-install__dismiss {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: white;
+	background-color: #3f3fa6;
+	padding: 4px 5px 5px;
+	font-size: 12px;
+	line-height: 1;
+	border-bottom-left-radius: 3px;
+	text-decoration: none;
+}
+
+.revx-wc-install__dismiss:hover {
+	color: red;
+}
+
+.revx-wc-install__dismiss .dashicons {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.revx-wc-install--pro .revx-wc-install__heading {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.revx-wc-install--pro .revx-wc-install__body > div {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+.revx-wc-install--pro .revx-wc-install__btn--pro {
+	background: #2271b1;
+	color: #fff;
+}
+
+.revx-wc-install--pro .revx-wc-install__btn--pro:hover,
+.revx-wc-install--pro .revx-wc-install__btn--pro:focus {
+	background: #185a8f;
+}
+
+.revx-wc-install--pro .revx-wc-install__btn--hero {
+	padding: 8px 14px !important;
+	min-height: inherit !important;
+	line-height: 1 !important;
+	box-shadow: none;
+	border: none;
+	transition: 400ms;
+}
+
+.revx-wc-install--pro .revx-wc-install__btn--hero:hover,
+.revx-wc-install--pro .revx-wc-install__btn--hero:focus {
+	border: none;
+	box-shadow: none;
+}
+
+.dashicons,
+.dashicons-before:before {
+	width: 20px;
+	height: 20px;
+	font-size: 19px;
+	vertical-align: sub;
+	text-align: center;
+	transition: color 0.1s ease-in;
+}
+
+.revx-setting-hellobar {
+	background: #005539;
+	padding-top: 5px;
+	padding-bottom: 7px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.85);
+	font-size: 14px;
+}
+
+.revx-setting-hellobar a {
+	margin-left: 4px;
+	font-weight: 700;
+	font-size: 14px;
+	color: #fff;
+}
+
+.revx-setting-hellobar strong {
+	color: #fff;
+	font-weight: 700;
+}
+.revx-ring {
+	-webkit-animation: ring 4s 0.7s ease-in-out infinite;
+	-moz-animation: ring 4s 0.7s ease-in-out infinite;
+	animation: ring 4s 0.7s ease-in-out infinite;
+	margin-right: 5px;
+	font-size: 20px;
+	position: relative;
+	top: 2px;
+	color: #fff;
+}
+.helobarClose {
+	position: absolute;
+	cursor: pointer;
+	right: 15px;
+	svg {
+		height: 16px;
+		color: #fff;
+	}
+}
+@keyframes ring {
+	0% {
+		transform: rotate(0);
+	}
+	1% {
+		transform: rotate(30deg);
+	}
+	3% {
+		transform: rotate(-28deg);
+	}
+	5% {
+		transform: rotate(34deg);
+	}
+	7% {
+		transform: rotate(-32deg);
+	}
+	9% {
+		transform: rotate(30deg);
+	}
+	11% {
+		transform: rotate(-28deg);
+	}
+	13% {
+		transform: rotate(26deg);
+	}
+	15% {
+		transform: rotate(-24deg);
+	}
+	17% {
+		transform: rotate(22deg);
+	}
+	19% {
+		transform: rotate(-20deg);
+	}
+	21% {
+		transform: rotate(18deg);
+	}
+	23% {
+		transform: rotate(-16deg);
+	}
+	25% {
+		transform: rotate(14deg);
+	}
+	27% {
+		transform: rotate(-12deg);
+	}
+	29% {
+		transform: rotate(10deg);
+	}
+	31% {
+		transform: rotate(-8deg);
+	}
+	33% {
+		transform: rotate(6deg);
+	}
+	35% {
+		transform: rotate(-4deg);
+	}
+	37% {
+		transform: rotate(2deg);
+	}
+	39% {
+		transform: rotate(-1deg);
+	}
+	41% {
+		transform: rotate(1deg);
+	}
+	43% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
